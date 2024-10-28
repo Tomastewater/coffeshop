@@ -16,6 +16,7 @@ class ProductForm(forms.Form):
     # cuando el usuario hace el request.
        
     def save(self):
+        # Crea un registra en la base de datos
         Product.objects.create(
             name = self.cleaned_data['name'],
             description = self.cleaned_data['description'],
