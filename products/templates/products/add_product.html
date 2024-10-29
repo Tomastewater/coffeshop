@@ -1,7 +1,6 @@
-Acá aparecerá el Form
 
-<form action = "{% url "add_product" %}" method="post">  <!-- Accedemos a la URL mediante su nombre y no mediante su ubicacion-->>
-    {% csrf_token %}
+<form action = "{% url "add_product" %}" method="post">  <!-- Accedemos a la URL mediante su nombre y no mediante su ubicacion-->
+    {% csrf_token %} <!-- Es un token que se genera cada vez que se intetna crear un producto, asi evitamos que se pueda crear productos desde otro sitio que no sea el nuestro -->
     {{form.as_p}}
     <button type="submit">Agregar</button>
 </form>
