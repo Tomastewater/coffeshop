@@ -3,5 +3,5 @@ from .views import ProductFormView, ProductListView
 
 urlpatterns = [
     path('agregar/', ProductFormView.as_view(), name='add_product'),
-    path('listar/', ProductListView.as_view(), name='list_product'),
+    path('', ProductListView.as_view(), name='list_product'),
 ]
