@@ -44,7 +44,8 @@ DJANGO_APPS = [
 
 LOCAL_APPS = [
     'products',
-    'users'
+    'users',
+    'orders',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS
